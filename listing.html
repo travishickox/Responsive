@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Presentation</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="twitterBootstrap/css/bootstrap.min.css" />
+    <!-- End Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+<body data-spy="scroll" data-target="#sidebar" data-offset="160">
+    <div id="listing" class="container">
+        <div class="navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+                <div class="nav-collapse navbar-responsive-collapse collapse" style="height: 0px;">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="listing.html">Home</a></li>
+                        <li><a href="#" id="screen" class="centered">Full Screen</a></li>
+                        <li><a href="standings.html">Responsive Table</a></li>
+                    </ul>
+                    <form class="navbar-form pull-right" action="">
+                        <input type="text" class="form-control col-lg-8" placeholder="Search">
+                    </form>
+                </div>
+                <!-- /.nav-collapse -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <div class="col-12">
+            <h1>Teams</h1>
+            <div class="col-2">
+                <div id="sidebar" class="bs-sidebar affix">
+                    <h3>Filter</h3>
+                    <ul id="filters" class="nav nav-pills nav-stacked" data-option-key="filterBy">
+                        <li>
+                            <a href="#" data-filter="*">All</a>
+                        </li>
+                        <li>
+                            <a href="#" data-filter=".east">East Coast</a>
+                        </li>
+                        <li>
+                            <a href="#" data-filter=".west">West Coast</a>
+                        </li>
+                    </ul>
+                    <h3>Sort</h3>
+                    <ul id="sort-by" class="nav nav-pills nav-stacked" data-option-key="sortBy">
+                        <li>
+                            <a href="#name" data-option-value="name">Alphabetical</a>
+                        </li>
+                        <li>
+                            <a href="#record" data-option-value="record">Record</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="mainContent" class="col-10 isotope">
+                <div class="row">
+                    <div class="col-3 team east">
+                        <div class="thumbnail">
+                            <p class="name"><strong>Miami</strong></p>
+                            <a href="teams/NBA/detailsHeat.html">
+                                <img src="images/logos/logo-heat.jpg" alt="Miami Heat Logo" class="img-responsive"></a>
+                            <p class="record">10 - 20</p>
+                        </div>
+                    </div>
+                    <div class="col-3 team east">
+                        <div class="thumbnail">
+                            <p class="name"><strong>Chicago</strong></p>
+                            <a href="teams/NBA/detailsBulls.html">
+                                <img src="images/logos/logo-bulls.jpg" alt="Miami Heat Logo" class="img-responsive"></a>
+                            <p class="record">20 - 10</p>
+                        </div>
+                    </div>
+                    <div class="col-3 team east">
+                        <div class="thumbnail">
+                            <p class="name"><strong>Boston</strong></p>
+                            <a href="teams/NBA/detailsCeltics.html">
+                                <img src="images/logos/logo-celtics.jpg" alt="Boston Celtics Logo" class="img-responsive"></a>
+                            <p class="record">15 - 15</p>
+                        </div>
+                    </div>
+                    <div class="col-3 team west">
+                        <div class="thumbnail">
+                            <p class="name"><strong>Los Angeles</strong></p>
+                            <a href="teams/NBA/detailsLakers.html">
+                                <img src="images/logos/logo-lakers.jpg" alt="Miami Heat Logo" class="img-responsive"></a>
+                            <p class="record">18 - 12</p>
+                        </div>
+                    </div>
+                    <div class="col-3 team west">
+                        <div class="thumbnail">
+                            <p class="name"><strong>Dallas</strong></p>
+                            <a href="teams/NBA/detailsMavericks.html">
+                                <img src="images/logos/logo-mavericks.jpg" alt="Miami Heat Logo" class="img-responsive"></a>
+                            <p class="record">12 - 18</p>
+                        </div>
+                    </div>
+                    <div class="col-3 team east">
+                        <div class="thumbnail">
+                            <p class="name"><strong>Cleveland</strong></p>
+                            <a href="teams/NBA/detailsCavaliers.html">
+                                <img src="images/logos/logo-cavaliers.jpg" alt="Boston Celtics Logo" class="img-responsive"></a>
+                            <p class="record">14 - 16</p>
+                        </div>
+                    </div>
+                    <div class="col-3 team east">
+                        <div class="thumbnail">
+                            <p class="name"><strong>Brooklyn</strong></p>
+                            <a href="teams/NBA/detailsNets.html">
+                                <img src="images/logos/logo-nets.jpg" alt="Boston Celtics Logo" class="img-responsive"></a>
+                            <p class="record">16 - 14</p>
+                        </div>
+                    </div>
+                    <div class="col-3 team west">
+                        <div class="thumbnail">
+                            <p class="name"><strong>Oklahoma</strong></p>
+                            <a href="teams/NBA/detailsThunder.html">
+                                <img src="images/logos/logo-thunder.jpg" alt="Miami Heat Logo" class="img-responsive"></a>
+                            <p class="record">5 - 25</p>
+                        </div>
+                    </div>
+                    <div class="col-3 team west">
+                        <div class="thumbnail">
+                            <p class="name"><strong>Los Angeles</strong></p>
+                            <a href="teams/NBA/detailsClippers.html">
+                                <img src="images/logos/logo-clippers.jpg" alt="Miami Heat Logo" class="img-responsive"></a>
+                            <p class="record">25 - 5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript plugins (requires jQuery) -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/isotope.min.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+
+</body>
+</html>

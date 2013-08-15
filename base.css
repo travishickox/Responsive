@@ -1,0 +1,216 @@
+﻿.highlight {
+    border: 1px solid red;
+}
+
+body {
+    padding-top: 70px;
+}
+
+.navbar-inverse {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.bs-sidebar.affix {
+    margin-top: 22px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#special {
+    display: none;
+}
+
+#mainContent .col-3 {
+    width: 32%;
+}
+
+#mainContent .thumbnail {
+    border: none;
+}
+
+.record {
+    margin: 10px 0 0 0;
+    padding-right: 5px;
+    text-align: right;
+    font-style: italic;
+}
+
+.img-thumbnail-small {
+    width: 50%;
+}
+
+/**** SEO FRIENDLY TABLES ****/
+/**** http://mobifreaks.com/user-interface/responsive-and-seo-friendly-data-tables/ ****/
+.table {
+    display: table; /* Defines a Table */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border-bottom: 2px solid #dddddd;
+    color: #8d8d8d;
+    margin: 10px 0;
+}
+
+.table-head {
+    display: table-header-group; /* Defines a table header group */
+}
+
+    .table-head .column { /* Column inside the table-head */
+        background: #333333;
+        color: #7d7d7d;
+        border-right: 1px solid #5d5d5d;
+        border-bottom: none;
+    }
+
+        .table-head .column:hover { /* Column hover inside the table-head */
+            background: #222222;
+        }
+
+.responsive-row {
+    display: table-row; /* Defines a table row */
+}
+
+    .responsive-row .column:nth-child(1) { /* First column in a row */
+        border-left: 1px solid #eeeeee;
+    }
+
+    .responsive-row:last-child .column { /* column in a last row */
+        border-bottom: none;
+    }
+
+.column {
+    display: table-cell; /* Defines a table cell */
+    padding: 10px 20px;
+    border-bottom: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+}
+
+    .column:hover {
+        background: #f9f9f9;
+    }
+
+/***** SPECIFIC PAGE STYLES ****/
+#listing #sidebar {
+    margin-top: 0px;
+}
+
+#listing h3:nth-child(1) {
+    margin-top: 5px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .col-2 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1159px) {
+    #special {
+        display: block;
+    }
+}
+
+
+/**** RESPONSIVE SEO FRIENDLY TABLES ****/
+/**** http://mobifreaks.com/user-interface/responsive-and-seo-friendly-data-tables/ ****/
+@media all and (max-width: 640px) {
+    .table,
+    .responsive-row,
+    .column,
+    .column:before {
+        display: block; /* Converts a table, table row, table column and table column:before into a block element */
+    }
+
+        .table,
+        .responsive-row .column:last-child {
+            border-bottom: none;
+        }
+
+    .table-head {
+        position: absolute; /* Hides table head but not using display none */
+        top: -1000em;
+        left: -1000em;
+    }
+
+    .responsive-row {
+        border: 1px solid #eeeeee;
+        border-top: 2px solid #dddddd;
+        border-bottom: 2px solid #dddddd;
+        margin: 20px 0;
+    }
+
+        .responsive-row .column:nth-child(1) { /* first column of the row */
+            border-left: none;
+            background-color: #999;
+            color: #FFF;
+        }
+
+        .responsive-row .column:last-child { /* last column of the row */
+            border-right: none;
+        }
+
+        .responsive-row:last-child .column,
+        .column { /* Column in the last row and column */
+            border-bottom: 1px solid #eeeeee;
+        }
+
+            .column:before { /* prints the value of data-label attribute before the column data */
+                font-weight: bold;
+                padding-right: 20px;
+                font-size: 12px;
+                content: " "attr(data-label)" //"; /* call the attribute value of data-label and adds a string // */
+            }
+}
+
+/**** START ISOTOPE FILTERING ****/
+
+.isotope-item {
+    z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -ms-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width;
+}
+
+    .isotope .isotope-item {
+        -webkit-transition-property: -webkit-transform, opacity;
+        -moz-transition-property: -moz-transform, opacity;
+        -ms-transition-property: -ms-transform, opacity;
+        -o-transition-property: -o-transform, opacity;
+        transition-property: transform, opacity;
+    }
+
+        /**** disabling Isotope CSS3 transitions ****/
+
+        .isotope.no-transition,
+        .isotope.no-transition .isotope-item,
+        .isotope .isotope-item.no-transition {
+            -webkit-transition-duration: 0s;
+            -moz-transition-duration: 0s;
+            -ms-transition-duration: 0s;
+            -o-transition-duration: 0s;
+            transition-duration: 0s;
+        }
+
+/**** END ISOTOPE FILTERING ****/

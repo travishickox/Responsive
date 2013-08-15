@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Presentation</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="../../twitterBootstrap/css/bootstrap.min.css" />
+    <!-- End Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body data-spy="scroll" data-target="#sidebar" data-offset="160">
+    <div class="container">
+        <div class="navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+                <div class="nav-collapse navbar-responsive-collapse collapse" style="height: 0px;">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="../../listing.html">Home</a></li>
+                        <li><a href="#" id="screen" class="centered">Full Screen</a></li>
+                        <li><a href="../../standings.html">Responsive Table</a></li>
+                    </ul>
+                    <form class="navbar-form pull-right" action="">
+                        <input type="text" class="form-control col-lg-8" placeholder="Search">
+                    </form>
+                </div>
+                <!-- /.nav-collapse -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <div class="col-12">
+            <h1>Oklahoma Thunder</h1>
+            <div class="col-2">
+                <div id="sidebar" class="bs-sidebar affix">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="#upcomingGames">Upcoming Games</a></li>
+                        <li><a href="#stadiumSeatingInfo">Seating Information</a></li>
+                        <li><a href="#stadiumSeating">Seating</a></li>
+                        <li><a href="#stadiumHistory">Stadium History</a></li>
+                        <li><a href="../../listing.html">Back</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="special" class="col-12">
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="#upcomingGames">Upcoming Games</a></li>
+                    <li><a href="#stadiumSeatingInfo">Seating Information</a></li>
+                    <li><a href="#stadiumSeating">Seating</a></li>
+                    <li><a href="#stadiumHistory">Stadium History</a></li>
+                </ul>
+            </div>
+            <div id="mainContent" class="col-10">
+                <div class="row">
+                    <h2 id="upcomingGames">Upcoming Games</h2>
+                    <hr />
+                    <div class="col-4">
+                        <div class="thumbnail">
+                            <img src="../../images/logos/logo-heat.jpg" alt="Miami Heat Logo">
+                            <div class="caption">
+                                <h3>Miami Heat</h3>
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                <p><a data-toggle="modal" href="#miamiHeatModal" class="btn btn-primary">Buy Tickets Now</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="thumbnail">
+                            <img src="../../images/logos/logo-heat.jpg" alt="Miami Heat Logo">
+                            <div class="caption">
+                                <h3>Miami Heat</h3>
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                <p><a data-toggle="modal" href="#miamiHeatModal" class="btn btn-primary">Buy Tickets Now</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="thumbnail">
+                            <img src="../../images/logos/logo-bulls.jpg" alt="Chicago Bulls Logo">
+                            <div class="caption">
+                                <h3>Chicago Bulls</h3>
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                <p><a data-toggle="modal" href="#bostonCelticsModal" class="btn btn-primary">Buy Tickets Now</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <h3 id="stadiumSeatingInfo">Seating Information</h3>
+                <p>Aenean semper venenatis felis at euismod. In pretium a eros in vehicula. Quisque urna dui, venenatis id elit eu, convallis eleifend mi. Nullam id eros augue. Vivamus viverra dignissim rutrum. Duis non enim non libero vulputate blandit. Etiam a ligula elementum, sodales turpis vel, imperdiet lorem. Sed bibendum commodo fringilla. Sed ac est quis odio posuere pretium. Nullam pretium ultrices malesuada. Suspendisse lacinia, leo a rhoncus dapibus, diam neque tincidunt lectus, et facilisis quam nibh vel mi. Cras vitae varius nisi. Nulla gravida faucibus aliquet. Suspendisse aliquet scelerisque nulla sed interdum. Sed ac imperdiet erat, et viverra nisl. Fusce quis lacus dapibus, venenatis leo at, luctus nulla.</p>
+                <p>Donec sit amet mi sollicitudin, imperdiet urna eget, rutrum metus. Curabitur at dui in nulla gravida posuere. Aliquam ut vestibulum nibh. Phasellus consequat orci mi, vel condimentum nibh scelerisque non. In hac habitasse platea dictumst. Ut iaculis mi id tortor pharetra lacinia. Nam ut justo ac diam iaculis suscipit. Cras eu condimentum nulla. Mauris et bibendum erat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <hr />
+                <h3 id="stadiumSeating">Seating</h3>
+                <a href="#" data-toggle="tooltip" title="" data-original-title="Chicago Stadium">
+                    <img class="img-responsive" src="../../images/bullsCompressed.jpg" />
+                </a>
+                <hr />
+                <h3 id="stadiumHistory">Stadium History</h3>
+                <p>Donec sit amet mi sollicitudin, imperdiet urna eget, rutrum metus. Curabitur at dui in nulla gravida posuere. Aliquam ut vestibulum nibh. Phasellus consequat orci mi, vel condimentum nibh scelerisque non. In hac habitasse platea dictumst. Ut iaculis mi id tortor pharetra lacinia. Nam ut justo ac diam iaculis suscipit. Cras eu condimentum nulla. Mauris et bibendum erat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <p>Ut tellus nunc, venenatis id massa sit amet, imperdiet rhoncus magna. Ut in erat sed eros rhoncus facilisis ut egestas sapien. Maecenas vel odio nisl. Nulla ut feugiat libero. Nullam leo quam, fermentum nec euismod quis, dignissim et est. Sed orci nulla, fermentum non ligula ac, luctus sollicitudin diam. In risus diam, malesuada at vehicula non, tempor vitae mauris.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODALS -->
+    <div id="miamiHeatModal" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel">Modal Heading</h4>
+                </div>
+                <div class="modal-body">
+                    <h4>Text in a modal</h4>
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+                    <h4>Popover in a modal</h4>
+                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <div id="bostonCelticsModal" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="H1">Modal Heading</h4>
+                </div>
+                <div class="modal-body">
+                    <h4>Text in a modal</h4>
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- JavaScript plugins (requires jQuery) -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../js/base.js"></script>
+</body>
+</html>

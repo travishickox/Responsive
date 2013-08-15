@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body {
+            font-size: 20px; 
+        }
+
+        div {
+            border: 1px solid black;
+            margin: 2em;
+            padding: 2em;
+            height: 100px;
+        }
+
+        #boxOne {
+            width: 15em;
+        }
+
+        #boxTwo {
+            min-width: 15em;
+        }
+
+        #boxThree {
+            max-width: 15em;
+        }
+
+        /*.reduce {
+            width: 300px;
+        }*/
+    </style>
+</head>
+<body>
+    <div id="boxOne" class="reduce">
+        <p>width: 15em</p>
+    </div>
+    <div id="boxTwo" class="reduce">
+        <p><strong>min</strong>-width: 15em</p>
+    </div>
+    <div id="boxThree" class="reduce">
+        <p><strong>max</strong>-width: 15em</p>
+    </div>
+</body>
+</html>
