@@ -10,7 +10,7 @@
         $mainNavbar = $(".navbar-inverse"),
         $body = ("body");
 
-/*    $(window).resize(function () {
+    $(window).resize(function () {
         if ($(window).width() < 1200) {
             $($container).removeClass("col-10").addClass("col-12");
         } else {
@@ -25,7 +25,7 @@
             $($body).css("padding-top", "70px");
         }
     });
-*/
+
     // RELOAD LISTING #MAINCONTENT DIV
     var $screen = $("#screen"),
         $navParent = $(".navbar-brand").parent();
